@@ -1,0 +1,18 @@
+.visual{position:relative}.institution-external-image{position:absolute;inset:0;width:100%;height:100%;z-index:1}.visual.has-external-image>svg,.visual.has-external-image>.visual-label{visibility:hidden}
+.arc-register-link{display:inline-block;color:#edb7bf;border:1px solid #8b4d5b;padding:14px 18px;margin:18px 0;text-decoration:none}.reader-sections p{white-space:pre-line}
+.admin-alert-stack{position:fixed;inset:14px auto auto 14px;margin:0;padding:0;width:min(360px,calc(100vw - 28px));max-height:calc(100vh - 28px);overflow:auto;background:transparent;border:0;color:#efdde1;z-index:2147483646;pointer-events:none;font-family:Arial,'Malgun Gothic',sans-serif}
+.admin-alert-stack::backdrop{background:transparent;pointer-events:none}
+.admin-alert{border:1px solid #80424e;border-left:3px solid #cf7886;background:#211016f5;padding:16px 18px;margin:0 0 10px;box-shadow:0 8px 35px #0007;animation:alert-appear .4s ease both}
+.admin-alert strong{font-size:12px;font-weight:600;letter-spacing:.03em}.admin-alert p{font-size:12px;line-height:1.8;color:#c6a7af;margin:8px 0 0;word-break:keep-all}
+.admin-takeover{position:fixed;inset:0;width:100vw;max-width:none;height:100dvh;max-height:none;margin:0;padding:0;border:0;background:#020203;overflow:hidden;color:#e5d9dc;outline:none}
+.admin-takeover::backdrop{background:#000}.admin-takeover[open]{display:grid;place-items:center}
+.admin-appearance{width:min(720px,90vw);height:86dvh;object-fit:contain;animation:appearance-in .35s ease both}
+.admin-takeover.is-blocked .admin-appearance{animation:appearance-off .65s forwards}
+.admin-block-message{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:24px;text-align:center;background:#000;animation:block-in 1s both}
+.admin-block-message small{font:10px monospace;letter-spacing:3px;color:#955963}.admin-block-message h1{font-size:clamp(22px,4vw,38px);font-weight:400;margin:23px 0 13px;letter-spacing:-.04em}.admin-block-message p{font-size:12px;color:#766970}
+.admin-disconnected{overflow:hidden}
+@keyframes alert-appear{from{opacity:0;transform:translateX(-12px)}to{opacity:1;transform:none}}
+@keyframes appearance-in{from{opacity:0}to{opacity:1}}
+@keyframes appearance-off{40%{transform:scaleY(.005);filter:brightness(2)}100%{transform:scale(0);opacity:0}}
+@keyframes block-in{0%,60%{opacity:0}100%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.admin-alert,.admin-appearance,.admin-takeover.is-blocked .admin-appearance,.admin-block-message{animation:none}.admin-takeover.is-blocked .admin-appearance{visibility:hidden}}
